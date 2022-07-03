@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <style>
+        .display{
+          font-size: 55px;
+        }
+        .form-control{
+          width: 81% ;
+        }
+        .time{
+          font-size: 27px;
+          margin-left: 38px;
+          margin-top: 23px;
+          font-weight: 25px;
+        }
+        .scores{
+          font-size: 25px ;
+          margin-left: 50px;
+        }
+        .inst{
+          flex-basis: 31%;
+          font-size: medium;
+          /* box-sizing: border-box; */
+        }
+        .para{
+          font-weight: bold;
+          padding: 5px;
+          /* box-sizing: border-box; */
+        }
+        h3#message{
+          margin-left: inherit;
+        }
+        .btn-primary{
+          margin-left: 84%;
+        }
+       #sel1{ 
+         width: 7%; 
+         margin-left: 47%;
+       }
+       .btn-primary{
+        margin-left: 47%;
+       }
+       label{
+        margin-left: 47%;
+       }
+      </style>
+  </head>
+  <body>
+      <div class="well text-center" id="title">
+         <header class="header"><h1>WORD BEATER</h1></header>
+       </div>
+      <div class="form-group">
+        <label for="sel1">Choose level:</label>
+        <select class="form-control" id="sel1">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+       
+       <div class="title text-center"><h3>Type the given word within 
+        <span class="text-success" id="seconds">5</span> Seconds </div>   <!--use of span-->
+       <h2 class="display text-center" id="current-word">Hello</h2>    <!--use of class display-->
+       <div class="row">
+        <br>
+        <div class="col-md-5 col-md-offset-4 align-center">   <!--center ke liye-->
+          <input type="text " class="form-control form-control-lg " placeholder="start typing..." id="word" autofocus>
+          <h3 class="mt-3" id="message"></h3>    
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-md-2 col-md-offset-4">
+          <h2 class="time"> Time Left: 
+          <span id="timedisplay">0</span></h2>        
+        </div>
+        <div class="col-md-2">
+        <h2>Score:
+          <span id="score-display">0</span></h2>  
+      </div>
+       </div>
+       <br>
+       <div class="container">
+        <button type="button" class="btn btn-primary" id="btn">Restart</button>   <!--button-->
+       </div>
+       <br>
+       <div class="inst text-center">
+        <h2>INSTRUCTIONS</h2>
+        <p class="para">Type each word in the given amount of time to score best.Just type the correct<br> word and make the high score</p>
+        </div>
+
+       
+ </body>
+ <script src="main.js"></script>
+</html>
+    
